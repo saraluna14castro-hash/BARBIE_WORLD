@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calendario de Emociones | Barbie World</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            Barbie<span>World</span> ♡
+        </a>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="diario.html">Barbie Diary</a>
+            <a href="mensajitos.html">Mis mensajitos 💌</a>
+            <a href="calendario.html">Calendario 💗</a>
+            <a href="index.html#nosotros">Nosotros</a>
+        </nav>
+
+        <a href="catalogo.html" class="nav-button">Exploremos ✨</a>
+    </header>
+
+    <!-- CALENDARIO DE EMOCIONES -->
+    <main>
+        <section id="calendario" class="mood-calendar-section">
+
+            <div class="mood-calendar-container">
+
+                <span class="calendar-subtitle">
+                    MY EMOTIONS, MY LITTLE WORLD ♡
+                </span>
+
+                <h1>Mi calendario de emociones 💗</h1>
+
+                <p class="calendar-description">
+                    Cada día tiene una emoción y cada emoción merece un espacio.
+                </p>
+
+                <div class="calendar-header">
+                    <button type="button" id="prevMonth">❮</button>
+                    <h2 id="monthYear"></h2>
+                    <button type="button" id="nextMonth">❯</button>
+                </div>
+
+                <div class="calendar-weekdays">
+                    <span>Lun</span>
+                    <span>Mar</span>
+                    <span>Mié</span>
+                    <span>Jue</span>
+                    <span>Vie</span>
+                    <span>Sáb</span>
+                    <span>Dom</span>
+                </div>
+
+                <div id="calendarDays" class="calendar-days"></div>
+
+                <div class="emotion-form-container">
+
+                    <h2>¿Cómo te sentiste? 🌷</h2>
+
+                    <p id="selectedDate">
+                        Selecciona un día del calendario
+                    </p>
+
+                    <form id="emotionForm">
+
+                        <select id="emotionSelect" required>
+                            <option value="">Elige tu emoción</option>
+                            <option value="Feliz">😊 Feliz</option>
+                            <option value="Emocionada">💕 Emocionada</option>
+                            <option value="Tranquila">🌷 Tranquila</option>
+                            <option value="Nostálgica">🦋 Nostálgica</option>
+                            <option value="Cansada">🌙 Cansada</option>
+                        </select>
+
+                        <textarea
+                            id="emotionNote"
+                            placeholder="Escribe algo sobre tu día..."
+                            required
+                        ></textarea>
+
+                        <button type="submit">
+                            GUARDAR MI EMOCIÓN 💖
+                        </button>
+
+                    </form>
+
+                    <div id="emotionMessage"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <a href="index.html" class="logo">
+            Barbie<span>World</span> ♡
+        </a>
+        <p>SOÑAR EN GRANDE NUNCA PASA DE MODA ✨</p>
+    </footer>
+
+    <script src="./js/calendar.js"></script>
+
+</body>
+</html>
